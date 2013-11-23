@@ -1,0 +1,9 @@
+{
+    "reporter": "tap",
+    "framework": "mocha+chai",
+    "launch_in_dev": ["chrome", "firefox"],
+    "launch_in_ci": ["chrome", "firefox"],
+    "src_files": [
+        "./_packaged/ModelTest.js"
+    ]
+}

@@ -1,6 +1,10 @@
 {
   "name": "LeProjet",
   "version": "0.0.1",
+  "scripts": {
+      "testemUnit": "testem -f client/test/unit/testem.json"
+  },
+
   "dependencies": {
     "connect": "2.11.0",
     "express": "3.4.4"
