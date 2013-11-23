@@ -2,6 +2,9 @@
   "name": "LeProjet",
   "version": "0.0.1",
   "scripts": {
+      "server": "node app.js",
+      "casper": "casperjs test client/test/E2E/casper.js --engine=slimerjs",
+      "dalek": "dalek -b chrome client/test/E2E/dalek.js",
       "testemUnit": "testem -f client/test/unit/testem.json",
       "testemInte": "testem -f client/test/integration/testem.json"
   },
