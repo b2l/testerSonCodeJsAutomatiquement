@@ -10,8 +10,8 @@ module.exports = function(grunt) {
 
         browserify: {
             './_packaged/App.js': 'client/src/js/App.js',
-            './_packaged/ModelTest.js': 'client/test/unit/specs/ModelTest.js',
-            './_packaged/integrationTest.js': 'client/test/integration/specs/integrationTest.js'
+            './_packaged/ModelTest.js': 'client/test/unit/ModelTest.js',
+            './_packaged/integrationTest.js': 'client/test/integration/integrationTest.js'
         },
 
         clean: [
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
                     singleRun: true,
                     files: [
                         './_packaged/App.js',
-                        './test/client/unit/specs/*.js'
+                        './client/test/unit/*.js'
                     ],
                     frameworks: ['mocha', 'chai', 'sinon'],
                     browsers: ['Chrome', 'Firefox'],

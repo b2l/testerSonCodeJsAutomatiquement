@@ -1,5 +1,5 @@
 var expect = chai.expect;
-var Model = require('../../../src/js/Model');
+var Model = require('../../src/js/Model');
 
 describe('Model', function() {
 
