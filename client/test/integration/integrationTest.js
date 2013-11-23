@@ -1,4 +1,5 @@
 var expect = chai.expect;
+require('../../src/js/App.js');
 
 describe('Notre projet', function() {
 
@@ -23,7 +24,7 @@ describe('Notre projet', function() {
 
         // Then
         var list = document.getElementById('elements-list');
-        expect(list.querySelectorAll('li').length).to.equal(4);
+        expect(list.querySelectorAll('li').length).to.equal(1);
         expect(input.value).to.equal("");
     });
 });

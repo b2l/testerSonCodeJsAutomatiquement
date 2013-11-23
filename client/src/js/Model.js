@@ -2,6 +2,8 @@ function Model() {
     this.elements = [];
 }
 
+Model.prototype.init = function() {};
+
 Model.prototype.findAll = function() {
     return this.elements;
 };
