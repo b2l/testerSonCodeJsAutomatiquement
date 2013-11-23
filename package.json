@@ -2,7 +2,8 @@
   "name": "LeProjet",
   "version": "0.0.1",
   "scripts": {
-      "testemUnit": "testem -f client/test/unit/testem.json"
+      "testemUnit": "testem -f client/test/unit/testem.json",
+      "testemInte": "testem -f client/test/integration/testem.json"
   },
 
   "dependencies": {

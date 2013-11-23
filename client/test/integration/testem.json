@@ -1,0 +1,8 @@
+{
+    "framework": "mocha+chai",
+    "launch_in_dev": ["Chrome", "Firefox"],
+    "launch_in_ci": ["Chrome", "Firefox"],
+    "src_files": [
+        "./_packaged/integrationTest.js"
+    ]
+}
