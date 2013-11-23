@@ -3,6 +3,6 @@
     "launch_in_dev": ["Chrome", "Firefox"],
     "launch_in_ci": ["Chrome", "Firefox"],
     "src_files": [
-        "/home/b2l/project/conf/testerSonCodeJsAutomatiquement/_packaged/ModelTest.js"
+        "./_packaged/ModelTest.js"
     ]
 }
