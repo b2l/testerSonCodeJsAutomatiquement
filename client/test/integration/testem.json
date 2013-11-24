@@ -3,6 +3,8 @@
     "launch_in_dev": ["Chrome", "Firefox"],
     "launch_in_ci": ["Chrome", "Firefox"],
     "src_files": [
-        "./_packaged/integrationTest.js"
+        "./client/test/_lib/sinon.js",
+        "./_packaged/integrationTest.js",
+        "./_packaged/App.js"
     ]
 }

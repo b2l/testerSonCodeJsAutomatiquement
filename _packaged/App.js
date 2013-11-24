@@ -105,7 +105,7 @@ Store.prototype.save = function(element) {
         .post('/element')
         .send({ value: element })
         .set('Accept', 'application/json')
-        .end(function(){});
+        .end(function(response) {});
 };
 
 Store.prototype.findAll = function(cb) {

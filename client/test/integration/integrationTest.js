@@ -1,5 +1,10 @@
 var expect = chai.expect;
-require('../../src/js/App.js');
+
+var server = sinon.fakeServer.create();
+server.autoRespond = true;
+server.respondWith('GET', '/elements', [200, {
+    'Content-Type': 'application/json'
+}, '["elem1", "elem2", "elem3"]']);
 
 describe('Notre projet', function() {
 
@@ -13,6 +18,18 @@ describe('Notre projet', function() {
         }, 1);
     });
 
+    it('peut afficher la listes des éléments récupérés depuis le serveur', function(done) {
+        // Given
+        var list = document.getElementById('elements-list');
+
+        setTimeout(function async() {
+            expect(list.querySelectorAll('li').length).to.equal(3);
+            done();
+        }, 10);
+
+    });
+
+
     it('peut ajouter un élément dans la liste', function() {
         // Given
         var button = document.getElementById('ajouter-element-button');
@@ -24,7 +41,7 @@ describe('Notre projet', function() {
 
         // Then
         var list = document.getElementById('elements-list');
-        expect(list.querySelectorAll('li').length).to.equal(1);
+        expect(list.querySelectorAll('li').length).to.equal(4);
         expect(input.value).to.equal("");
     });
 });
